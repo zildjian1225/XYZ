@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #0a0a0a;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header h1 {
+  color: #ff00ff;
+  font-size: 4rem;
+  text-shadow: 0 0 50px #ff00ff;
+}
+.sub {
+  color: #00ffff;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+}
+.card {
+  background: #111;
+  border: 2px solid #ff00ff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 80px rgba(255,0,255,0.2);
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.feature {
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.crash { background: #440000; color: #ff4444; border: 1px solid #ff4444; }
+.delay { background: #004400; color: #44ff44; border: 1px solid #44ff44; }
+.band { background: #000044; color: #4444ff; border: 1px solid #4444ff; }
+.blank { background: #440044; color: #ff44ff; border: 1px solid #ff44ff; }
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
+.input-group input, .input-group select {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.input-group input:focus, .input-group select:focus {
+  outline: none;
+  border-color: #ff00ff;
+}
+#attackBtn {
+  padding: 16px;
+  background: #ff00ff;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+#attackBtn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 50px #ff00ff;
+}
+#resultBox {
+  background: #0a0a0a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  max-height: 300px;
+  overflow: auto;
+}
+#output {
+  color: #00ff88;
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #222;
+}
+.footer {
+  text-align: center;
+  color: #444;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
